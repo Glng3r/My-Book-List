@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MBL</title>
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+	<h3> Welcome to My Book List!</h3>
+	<%- include('navigation.ejs') %>
+    <a href ="search" class="button" >Search for books!</a>
+	<a href = "searchuser" class = "button">View another users rating!</a>
+	<a href ="admin" class="button" >Secret Admin Things</a>
+    <%- include('listview.ejs',{books:books}) %>
+</body>
+</html>

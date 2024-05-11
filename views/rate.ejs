@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MBL</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<header>
+    <title>MBL</title>
+</header>
+
+<body>
+    <%- include('navigation.ejs') %>
+    <h3>MBL</h3>
+    <h2>Viewing Book</h2>
+    <% if(book) {%>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+            </tr>
+            <tr>
+                <td><img src="https://covers.openlibrary.org/b/isbn/<%=book.isbn%>-M.jpg"></td>
+                <td>
+                    <%=book.book_title %>
+                </td>
+                <td>
+                    <%=book.author_name %>
+                </td>
+                <td>
+                    <%=book.isbn %>
+                </td>
+            </tr>
+        </table>
+        <form action="/rate/<%=book.isbn%>" method="POST">
+            <section>
+                <label for="rating">Rating</label>
+                <input id="rating" name="rating" type="text" placeholder="on a scale of 10" required>
+                <input id="finished" name="finished" type="text" placeholder="enter date you finshed book (not required)">
+            </section>
+            <button type="submit">Rate</button>
+        </form>
+        <%} %>
+</body>
+
+</html>
