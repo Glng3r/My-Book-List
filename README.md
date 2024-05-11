@@ -30,3 +30,5 @@ Features to add:<br>
 - Ability to create multiple lists<br>
 - More search options<br>
 - Ability to follow other users ?<br>
+<br>
+Used Open Library API to for book search. More information here: https://openlibrary.org/developers/api
