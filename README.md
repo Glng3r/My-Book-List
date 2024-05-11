@@ -4,7 +4,7 @@ make sure you are in the folder with the package-lock file and then run
 npm install
 LAUNCH INSTRUCTIONS:<br>
 open a terminal and run:<br>
-node server.js
+node server.js <br>
 TESTING INSTRUCTIONS URL:<br>
 http://localhost:3000
 <br><br>
