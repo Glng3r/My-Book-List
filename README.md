@@ -9,17 +9,17 @@ TESTING INSTRUCTIONS URL:<br>
 http://localhost:3000
 <br><br>
 sample admin:<br>
-user: frank
+user: frank ;
 password: secret2
 <br><br>
 sample accounts:<br>
-username: g
+username: g ;
 password: g,
 <br>
-username: hunter
+username: hunter ;
 password: hunter,
 <br>
-username: lucas,
+username: lucas ;
 password: lucas
 <br>
 Current Plans:<br>
